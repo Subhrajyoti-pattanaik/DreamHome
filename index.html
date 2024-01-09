@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome Reality!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="brand">DreamHome Reality!</div>
+        <div class="search-bar">
+          <input type="text" id="search" required="required" placeholder="Search">
+          <a href="#fetch">
+          <button type="button"  onclick="getdata();">Search</button></a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div>
+          <div class="card-container">
+        <div class="card">
+          
+          
+          <div class="containerr">
+            <i class="fa fa-car fa-2x"></i>
+            <div>
+            <h4><b>Sumit</b></h4>
+            <a href="mailto:sumitrajsingh228@hmail.com">sumitrajsingh228@gmail.com</a>
+            </div>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </div>
+          </div>
+          <button type="submit">Add Property</button>
+        </div>
+        </div>
+
+      <div class="form-container">
+        <form id="detailForm">
+          <div class="alert">Your form is submitted</div>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="picture">Picture:</label>
+          <input type="file" id="picture" name="picture" accept="image/*" >
+      
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required>
+      
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" required>
+      
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
+      
+          <button type="submit">Add Property</button>
+        </form>
+      </div>
+   
+    <div class="form-container" id="fetch">
+      <p> Name: <strong id="nam"></strong></p>
+      <div class="containerr">
+      
+      <img src="logo.png.jpg" width="400px" height="400px">
+    <div>
+        <p> Price: <strong id="pri"></strong></p>
+        <p> Location: <strong id="loc"></strong></p>
+        <p> About This Property: <strong id="desc"></strong></p>
+       
+
+    </div>
+  </div>
+  </div>
+
+      <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+      <script src="./script.js"></script>
+      <script type="text/javascript" src="load.js"></script>
+</body>
+</html>
